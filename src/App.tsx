@@ -12,17 +12,17 @@ function App() {
     {
       id: 1,
       title: "Todo List",
-      content: "Washing, doing Assignments, Calling Sister",
+      content: "1-Washing Clothes 2-Doing Assignments, 3-Calling Sister",
     },
     {
       id: 2,
-      title: "Remember",
-      content: "Dr Appointment on Next Week.",
+      title: "Remember List",
+      content: "Dr Appointment on Wedensday Next Week.",
     },
     {
       id: 3,
       title: "Reading List",
-      content: "1- Fraction of the Whole 2- Keep calm and Code On",
+      content: "1-Fraction of the Whole 2-Keep calm and Code On",
     },
   ])
 
