@@ -11,33 +11,18 @@ function App() {
   const [notes, setNotes] = useState<Note[]>([
     {
       id: 1,
-      title: "test note 1",
-      content: "bla bla note1",
+      title: "Todo List",
+      content: "Washing, doing Assignments, Calling Sister",
     },
     {
       id: 2,
-      title: "test note 2 ",
-      content: "bla bla note2",
+      title: "Remember",
+      content: "Dr Appointment on Next Week.",
     },
     {
       id: 3,
-      title: "test note 3",
-      content: "bla bla note3",
-    },
-    {
-      id: 4,
-      title: "test note 4 ",
-      content: "bla bla note4",
-    },
-    {
-      id: 5,
-      title: "test note 5",
-      content: "bla bla note5",
-    },
-    {
-      id: 6,
-      title: "test note 6",
-      content: "bla bla note6",
+      title: "Reading List",
+      content: "1- Fraction of the Whole 2- Keep calm and Code On",
     },
   ])
 
@@ -92,10 +77,10 @@ function App() {
   }
 
   const deleteNote = (event: React.MouseEvent, noteId: number) => {
-    event.stopPropagation();
-    const updatedNotes = notes.filter((note) => note.id !== noteId);
-    setNotes(updatedNotes);
-  };
+    event.stopPropagation()
+    const updatedNotes = notes.filter((note) => note.id !== noteId)
+    setNotes(updatedNotes)
+  }
 
   return (
     <div className="app-container">
@@ -136,7 +121,9 @@ function App() {
               onClick={() => handleNoteClick(note)}
             >
               <div className="notes-header">
-                <button onClick={(event) => deleteNote(event, note.id)}>x</button>
+                <button onClick={(event) => deleteNote(event, note.id)}>
+                  x
+                </button>
               </div>
               <h2>{note.title}</h2>
               <p>{note.content}</p>
